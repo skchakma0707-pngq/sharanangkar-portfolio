@@ -1096,3 +1096,39 @@ ul { list-style: none; }
 .modal-close:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+
+/* ===================================================
+   HERO SOCIAL CARD
+   =================================================== */
+.hero-social-card {
+  position: absolute;
+  bottom: 0px;
+  right: -20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  display: flex;
+  gap: 1rem;
+  z-index: 5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: float 4s ease-in-out infinite reverse;
+}
+.social-icon {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.social-icon:hover {
+  transform: scale(1.2) translateY(-3px);
+}
+@media (max-width: 991px) {
+  .hero-social-card {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -10px;
+  }
+}
