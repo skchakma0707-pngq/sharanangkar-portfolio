@@ -158,33 +158,3 @@ window.addEventListener('load', () => {
 });
 
 
-/* ---- PROJECT MODAL ---- */
-const modal = document.getElementById('projectModal');
-const modalClose = document.getElementById('modalClose');
-const modalTitle = document.getElementById('modalTitle');
-const modalDesc = document.getElementById('modalDesc');
-const modalMeta = document.getElementById('modalMeta');
-
-if (modal) {
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.style.cursor = 'pointer';
-    card.addEventListener('click', () => {
-      const title = card.querySelector('h3') ? card.querySelector('h3').textContent : 'Project Details';
-      const desc = card.querySelector('p').textContent;
-      const meta = card.querySelector('.project-meta').innerHTML;
-      
-      modalTitle.textContent = title;
-      modalDesc.textContent = desc;
-      modalMeta.innerHTML = meta;
-      
-      modal.classList.add('active');
-    });
-  });
-
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
-  modal.addEventListener('click', (e) => {
-    if(e.target === modal) modal.classList.remove('active');
-  });
-}
