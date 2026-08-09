@@ -1132,3 +1132,8 @@ ul { list-style: none; }
     bottom: -10px;
   }
 }
+
+.project-detail-hero .hero-title {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
