@@ -142,7 +142,7 @@ ul { list-style: none; }
 
 /* ---- SECTION COMMONS ---- */
 .section {
-  padding: 120px 0;
+  padding: 60px 0;
   position: relative;
 }
 .section-header {
@@ -816,12 +816,7 @@ ul { list-style: none; }
    ==================================== */
 .contact-section { background: #f8fafc; }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 40px;
-  align-items: start;
-}
+.contact-grid { display: flex; justify-content: center; align-items: center; }
 .contact-card {
   padding: 36px;
   margin-bottom: 20px;
@@ -1020,7 +1015,7 @@ ul { list-style: none; }
     padding: 20px;
   }
   .stat-divider { width: 60px; height: 1px; }
-  .section { padding: 80px 0; }
+  .section { padding: 40px 0; }
 }
 
 @media (max-width: 480px) {
@@ -1136,4 +1131,5 @@ ul { list-style: none; }
 .project-detail-hero .hero-title {
   font-size: clamp(32px, 4vw, 48px);
 }
+
 
