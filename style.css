@@ -1098,7 +1098,7 @@ ul { list-style: none; }
    =================================================== */
 .hero-social-card {
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   right: -20px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
