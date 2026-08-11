@@ -548,7 +548,7 @@ ul { list-style: none; }
   margin-bottom: 24px;
 }
 .about-photo {
-  width: 260px; height: 260px;
+  width: 380px; height: 380px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(131,156,184,0.3);
